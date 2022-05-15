@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>fenveireth@lhfblc.fr</email>
+	</maintainer>
+	<use>
+		<flag name="custom-cflags">Bypass strip-flags; use at your own peril</flag>
+		<flag name="gecko">Add support for the Gecko engine when using iexplore</flag>
+		<flag name="gstreamer">Use <pkg>media-libs/gstreamer</pkg> to provide DirectShow functionality;</flag>
+		<flag name="mingw">Build PE files using a MinGW cross compiler</flag>
+		<flag name="opencl">Enable OpenCL support</flag>
+		<flag name="osmesa">Add support for OpenGL in bitmaps using libOSMesa</flag>
+		<flag name="pcap">Support packet capture software (e.g. Wireshark)</flag>
+		<flag name="realtime">Pull in <pkg>sys-auth/rtkit</pkg> for low-latency pulseaudio support</flag>
+		<flag name="sdl">Add support for gamepad detection using SDL</flag>
+		<flag name="udev">Use <pkg>virtual/libudev</pkg> to provide plug and play support</flag>
+		<flag name="unwind">Use <pkg>sys-libs/libunwind</pkg> to unwind the stack</flag>
+		<flag name="usb">Use <pkg>virtual/libusb</pkg> to provide USB support</flag>
+		<flag name="vkd3d">Use <pkg>app-emulation/vkd3d</pkg> to provide Direct3D 12 support</flag>
+		<flag name="vulkan">Enable Vulkan drivers</flag>
+	</use>
+</pkgmetadata>
