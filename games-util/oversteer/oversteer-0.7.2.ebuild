@@ -9,6 +9,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="$(python_gen_cond_dep '
+	dev-python/evdev[${PYTHON_USEDEP}]
 	dev-python/matplotlib[${PYTHON_USEDEP}]
 	dev-python/pyudev[${PYTHON_USEDEP}]
 	dev-python/pyxdg[${PYTHON_USEDEP}]
