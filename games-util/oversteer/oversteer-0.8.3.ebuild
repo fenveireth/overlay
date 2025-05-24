@@ -1,5 +1,5 @@
 EAPI=8
-PYTHON_COMPAT=( python3_11 python3_12 )
+PYTHON_COMPAT=( python3_11 python3_12 python3_13 )
 inherit python-single-r1 meson xdg-utils
 DESCRIPTION="Graphical application to configure Logitech Wheels"
 HOMEPAGE="https://github.com/berarma/oversteer"
@@ -9,6 +9,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="${PYTHON_DEPS}
+	dev-libs/glib[introspection]
 	$(python_gen_cond_dep '
 		dev-python/evdev[${PYTHON_USEDEP}]
 		dev-python/matplotlib[${PYTHON_USEDEP}]
